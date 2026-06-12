@@ -3,155 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <title>نظام حجز تذاكر السينما الإلكتروني</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 
     <header>
         <h1>نظام حجز تذاكر السينما - Online Cinema Ticket Booking System</h1>
         <p>جامعة عمر المختار - كلية تقنية المعلومات</p>
-        <hr>
     </header>
 
-    <section>
+   <section>
         <h2>🎬 الأفلام المعروضة حالياً في الصالات</h2>
         <p>اختر الفيلم الذي ترغب في مشاهدته وتحديد مقاعده:</p>
         
-        <div>
-            
-            <div>
-                <h3>1. فيلم: زومبي (سعر التذكرة: 10 دولار)</h3>
-                <p><strong>الوصف:</strong> رحلة كوميدية صاخبة ومليئة بالمواقف المضحكة والمفاجآت غير المتوقعة مع فرقة غنائية تواجه الزومبي.</p>
+        <div class="movies-container">
+            <div class="movie-card">
+                <img src="1.jpeg" alt="بوستر فيلم زومبي" class="movie-poster">
+                <h3>1. فيلم: زومبي (10$)</h3>
+                <p>مواقف مضحكة ومفاجآت غير متوقعة مع فرقة غنائية تواجه الزومبي.</p>
             </div>
-            <hr>
             
-            <div>
-                <h3>2. فيلم: ديدو (سعر التذكرة: 15 دولار)</h3>
-                <p><strong>الوصف:</strong> مغامرة خيالية كوميدية شيقة حول مجموعة أصدقاء يتقلص حجمهم ليعيشوا في عالم من العجائب.</p>
+            <div class="movie-card">
+                <img src="2.jpeg" alt="بوستر فيلم ديدو" class="movie-poster">
+                <h3>2. فيلم: ديدو (10$)</h3>
+                <p>مجموعة أصدقاء يتقلص حجمهم ليعيشوا في عالم من العجائب.</p>
             </div>
-            <hr>
 
-            
-            <div>
-                <h3>3. فيلم: من أجل زيكو (سعر التذكرة: 12 دولار)</h3>
-                <p><strong>الوصف:</strong> رحلة عائلية مضحكة ومؤثرة لعايلة بسيطة تعبر البلاد من أجل مشاركة ابنهم زيكو في مسابقة أذكى طفل.</p>
+            <div class="movie-card">
+                <img src="3.jpeg" alt="بوستر فيلم من أجل زيكو" class="movie-poster">
+                <h3>3. فيلم: من أجل زيكو (12$)</h3>
+                <p>رحلة عائلية مضحكة ومؤثرة لعايلة بسيطة تعبر البلاد.</p>
             </div>
-            <hr>
 
-            
-            <div>
-                <h3>4. فيلم: البدلة (سعر التذكرة: 10 دولار)</h3>
-                <p><strong>الوصف:</strong> قصة كوميدية ممتعة لصديقين يقعان في سلسلة من الأزمات والمفارقات بسبب انتحال صفة رجال شرطة.</p>
+            <div class="movie-card">
+                <img src="4.jpeg" alt="بوستر فيلم البدلة" class="movie-poster">
+                <h3>4. فيلم: البدلة (10$)</h3>
+                <p>قصة كوميدية ممتعة لصديقين يقعان في أزمات بسبب انتحال صفة شرطة.</p>
             </div>
-            <hr>
 
-           
-            <div>
-                <h3>5. فيلم: أخي فوق الشجرة (سعر التذكرة: 8 دولار)</h3>
-                <p><strong>الوصف:</strong> مواقف طريفة تجمع شاباً انطوائياً مع شقيقه التوأم الذي يظهر فجأة ويقلب حياته رأساً على عقب.</p>
+            <div class="movie-card">
+                <img src="5.jpeg" alt="بوستر أخي فوق الشجرة" class="movie-poster">
+                <h3>5. فيلم: أخي فوق الشجرة (8$)</h3>
+                <p>مواقف طريفة تجمع شاباً انطوائياً مع شقيقه التوأم الفوضوي.</p>
             </div>
-            <hr>
 
-            
-            <div>
-                <h3>6. فيلم: تماسيح النيل (سعر التذكرة: 11 دولار)</h3>
-                <p><strong>الوصف:</strong> رحلة نيلية على متن باخرة تشهد عملية نصب غامضة ومواقف كوميدية متبادلة بين ركاب السفينة.</p>
+            <div class="movie-card">
+                <img src="6.jpeg" alt="بوستر تماسيح النيل" class="movie-poster">
+                <h3>6. فيلم: تماسيح النيل (11$)</h3>
+                <p>رحلة نيلية على متن باخرة تشهد عملية نصب غامضة ومضحكة.</p>
             </div>
-            <hr>
-            
-            <div>
-                <h3>7. فيلم الأجنبي: هاري بوتر - Harry Potter (سعر التذكرة: 13 دولار)</h3>
-                <p><strong>الوصف:</strong> عالم السحر والإثارة والمغامرات الخيالية الأسطورية في مدرسة هوجورتس للسحر.</p>
+
+            <div class="movie-card">
+                <img src="7.jpeg" alt="بوستر هاري بوتر" class="movie-poster">
+                <h3>7. فيلم: هاري بوتر (13$)</h3>
+                <p>عالم السحر والإثارة والمغامرات الخيالية في مدرسة هوجورتس.</p>
             </div>
-            <hr>
-            
-            <div>
-                <h3>8. فيلم الأجنبي: سيد الخواتم - The Lord of the Rings (سعر التذكرة: 20 دولار)</h3>
-                <p><strong>الوصف:</strong> ملحمة خيالية كبرى وصراع أسطوري من أجل تدمير الخاتم الأخطر وإنقاذ العالم.</p>
+
+            <div class="movie-card">
+                <img src="8.webp" alt="بوستر سيد الخواتم" class="movie-poster">
+                <h3>8. فيلم: سيد الخواتم (16$)</h3>
+                <p>ملحمة خيالية كبرى وصراع أسطوري من أجل تدمير الخاتم الأسطوري.</p>
             </div>
         </div>
     </section>
 
-    <br><br>
-
-   
     <section>
         <h2>🪑 خريطة صالة العرض واختيار المقاعد</h2>
         <p>مخطط تجريبي لشكل صالة السينما وتوزيع المقاعد المتوفرة:</p>
         
-        
-        <div style="background-color: #eee; text-align: center; padding: 10px; width: 60%;">
-            <strong>📺 الشاشة (SCREEN)</strong>
-        </div>
-        <br>
+        <div class="screen">📺 الشاشة (SCREEN)</div>
 
-        
-        <div>
-            
-            <div>
-                <strong>الصف A:</strong>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[❌ محجوز]</span>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[❌ محجوز]</span>
-                <span>[🪑 متاح]</span>
+        <div class="seating-chart">
+            <div class="row">
+                <span class="row-label">الصف A:</span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat occupied"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat occupied"></span>
+                <span class="seat"></span>
             </div>
-            <br>
 
-            
-            <div>
-                <strong>الصف B:</strong>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[❌ محجوز]</span>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
+            <div class="row">
+                <span class="row-label">الصف B:</span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat occupied"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
             </div>
-            <br>
-           
-            <div>
-                <strong>الصف C:</strong>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
-                <span>[🪑 متاح]</span>
+
+            <div class="row">
+                <span class="row-label">الصف C:</span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
             </div>
         </div>
 
         <p><strong>ملخص الاختيار المبدئي:</strong> عدد المقاعد المختارة: <span id="count">0</span> | الإجمالي التقريبي: <span id="total">0</span> دولار</p>
     </section>
 
-    <br><br>
-
     <section>
         <h2>📝 استمارة تأكيد حجز المقاعد والبيانات</h2>
-        
         <form action="booking_confirmation.html" method="POST">
             <fieldset>
                 <legend>بيانات حجز التذكرة الشخصية:</legend>
                 
-                
                 <label>الاسم بالكامل للمستخدم:</label><br>
                 <input type="text" name="full_name" placeholder="اكتب اسمك الثلاثي هنا" required><br><br>
-                            
+                
                 <label>رقم الهاتف أو الجوال:</label><br>
                 <input type="text" name="phone_number" required><br><br>
-  
+
                 <input type="submit" value="تأكيد الحجز النهائي والانتقال للتذكرة">
             </fieldset>
         </form>
     </section>
-    <br><br>
+
     <footer>
         <hr>
         <p>© 2026 جميع الحقوق محفوظة - فريق عمل مشروع السينما التفاعلي</p>
