@@ -405,3 +405,16 @@ footer {
     margin-top: 4px;
 }
 }
+
+.movie-card.selected-movie {
+    border: 3px solid #2ecc71 !important; 
+    box-shadow: 0 0 15px #2ecc71; 
+    transform: scale(1.03); 
+    background-color: rgba(46, 204, 113, 0.1); 
+    transition: all 0.3s ease;
+}
+.seat.selected {
+    background-color: #2ecc71 !important;
+    transform: scale(1.15); 
+    box-shadow: 0 0 10px #2ecc71; 
+}
