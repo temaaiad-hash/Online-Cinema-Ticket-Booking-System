@@ -68,10 +68,29 @@
     </section>
 
     <section>
-        <h2>🪑 خريطة صالة العرض واختيار المقاعد</h2>
+        <h2> خريطة صالة العرض واختيار المقاعد</h2>
         <p>مخطط تجريبي لشكل صالة السينما وتوزيع المقاعد المتوفرة:</p>
         
         <div class="screen">📺 الشاشة (SCREEN)</div>
+
+        <ul class="showcase">
+            <li>
+                <div class="seat-legend"></div>
+                <small>متاح عادي</small>
+            </li>
+            <li>
+                <div class="seat-legend vip"></div>
+                <small>متاح VIP (+5$)</small>
+            </li>
+            <li>
+                <div class="seat-legend selected"></div>
+                <small>مختار</small>
+            </li>
+            <li>
+                <div class="seat-legend occupied"></div>
+                <small>محجوز</small>
+            </li>
+        </ul>
 
         <div class="seating-chart">
             <div class="row">
@@ -99,15 +118,15 @@
             </div>
 
             <div class="row">
-                <span class="row-label">الصف C:</span>
-                <span class="seat"></span>
-                <span class="seat"></span>
-                <span class="seat"></span>
-                <span class="seat"></span>
-                <span class="seat"></span>
-                <span class="seat"></span>
-                <span class="seat"></span>
-                <span class="seat"></span>
+                <span class="row-label">الصف C (VIP):</span>
+                <span class="seat vip"></span>
+                <span class="seat vip"></span>
+                <span class="seat vip"></span>
+                <span class="seat vip"></span>
+                <span class="seat vip"></span>
+                <span class="seat vip"></span>
+                <span class="seat vip"></span>
+                <span class="seat vip"></span>
             </div>
         </div>
 
@@ -126,6 +145,16 @@
                 <label>رقم الهاتف أو الجوال:</label><br>
                 <input type="text" name="phone_number" required><br><br>
 
+                <label>اختر تاريخ العرض:</label><br>
+                <input type="date" name="booking_date" required><br><br>
+
+                <label>اختر توقيت الحفلة:</label><br>
+                <select name="booking_time" id="booking_time" required>
+                    <option value="03:00 م">حفلة ماتينيه (03:00 مساءً)</option>
+                    <option value="06:00 م">حفلة مسائية (06:00 مساءً)</option>
+                    <option value="09:00 م">حفلة السهرة (09:00 مساءً)</option>
+                </select><br><br>
+
                 <input type="submit" value="تأكيد الحجز النهائي والانتقال للتذكرة">
             </fieldset>
         </form>
@@ -135,6 +164,6 @@
         <hr>
         <p>© 2026 جميع الحقوق محفوظة - فريق عمل مشروع السينما التفاعلي</p>
     </footer>
-
+  <script src="script.js"></script> 
 </body>
 </html>
